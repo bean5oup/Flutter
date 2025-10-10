@@ -1,5 +1,7 @@
 # Flutter ❤️
 
+This project reuses frontend and backend components from Uniswap’s Autocater codebase to build a workers’ health survey system with EAS.
+
 ## Development
 
 ```bash
