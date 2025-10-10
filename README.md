@@ -2,6 +2,8 @@
 
 This project reuses frontend and backend components from Uniswap’s Autocater codebase to build a workers’ health survey system with EAS.
 
+<img width="2220" height="1875" alt="image" src="https://github.com/user-attachments/assets/3658e1dd-3d68-44f0-9e7d-a32bd67e4d9f" />
+
 ## Development
 
 ```bash
