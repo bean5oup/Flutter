@@ -9,8 +9,7 @@ This project reuses frontend and backend components from Uniswap’s Autocater c
 ```bash
 ### Configuration & Installation ###
 # 1. Clone this repo and enter cloned directory
-git clone git@github.com:Uniswap/autocator.git && cd autocator
-
+git clone [git@github.com:Uniswap/autocator.git](https://github.com/bean5oup/Flutter.git) && cd Flutter
 # 2. Copy example environment file (modify as needed)
 cp .env.example .env
 
