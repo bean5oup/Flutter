@@ -12,7 +12,7 @@ contract Toast is Script {
     uint256 ownerPK;
 
     function setUp() public {
-        ownerPK = 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80;
+        ownerPK = vm.envUint('_PK');
         owner = vm.addr(ownerPK);
     }
 
@@ -21,9 +21,11 @@ contract Toast is Script {
 
         FlutterAttester attester = new FlutterAttester();
 
-        bytes32 schemaUID = attester.registerSchema('bytes32 answer, uint256 timestamp, uint256 score', ISchemaResolver(address(0)), true);
-
         console2.log('attester:', address(attester));
+
+        // bytes32 schemaUID = attester.registerSchema('bytes32 answer, uint256 timestamp, uint256 score', ISchemaResolver(address(0)), true);
+
+        // console2.logBytes32(schemaUID);
 
         vm.stopBroadcast();
     }
