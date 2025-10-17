@@ -9,13 +9,13 @@ This project reuses frontend and backend components from Uniswap’s Autocater c
 ### Attesters
 
 | Network | Attester Name | Attester Address |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | OP Sepolia | Flutter | [`0xDa6c22e078D1bE1C5c2DE44e84C93B5e34F93388`](https://sepolia-optimism.etherscan.io/address/0xda6c22e078d1be1c5c2de44e84c93b5e34f93388) |
 
 ### Schemas
 
-| Network | Schema Content | Schema ID | Schema UID |
-| --- | --- | --- | --- |
+| Network | Schema Content | Schema UID |
+| --- | --- | --- |
 | OP Sepolia | `bytes32 answer, uint256 timestamp, uint256 score` | [`0xc36b95afaab96f9462cea8071c5484d8c3677b0d76e0a6135dcc0dfdd3c15004`](https://optimism-sepolia.easscan.org/schema/view/0xc36b95afaab96f9462cea8071c5484d8c3677b0d76e0a6135dcc0dfdd3c15004) |
 
 
