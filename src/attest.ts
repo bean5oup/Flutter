@@ -36,7 +36,7 @@ export async function initialize() {
         11155420: createPublicClient<Transport, ViemChain>({
             ...commonConfig,
             chain: optimismSepolia,
-            transport: http(process.env['RPC_URL_OPTIMISM'] || ""),
+            transport: http(process.env['RPC_URL_OPTIMISM_SEPOLIA'] || ""),
         }) as PublicClient
     };
 
@@ -49,7 +49,7 @@ export async function initialize() {
         11155420: createWalletClient({
             account,
             chain: optimismSepolia,
-            transport: http(process.env['RPC_URL_OPTIMISM']),
+            transport: http(process.env['RPC_URL_OPTIMISM_SEPOLIA']),
         })
     };
 }
@@ -84,7 +84,7 @@ export async function attest(
         const callData = encodeFunctionData({
             abi: [{
                 "type": "function",
-                "name": "attestAddress",
+                "name": "attest",
                 "inputs": [
                     { "name": "schemaUID", "type": "bytes32", "internalType": "bytes32" },
                     { "name": "recipient", "type": "address", "internalType": "address" },
@@ -96,7 +96,7 @@ export async function attest(
                 ],
                 "stateMutability": "nonpayable"
             }],
-            functionName: "attestAddress",
+            functionName: "attest",
             args: [
                 '0xc36b95afaab96f9462cea8071c5484d8c3677b0d76e0a6135dcc0dfdd3c15004',
                 recipient as Hex,

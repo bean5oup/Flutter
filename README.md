@@ -4,12 +4,28 @@ This project reuses frontend and backend components from Uniswap’s Autocater c
 
 <img width="2220" height="1875" alt="image" src="https://github.com/user-attachments/assets/3658e1dd-3d68-44f0-9e7d-a32bd67e4d9f" />
 
+## Deployment
+
+### Attesters
+
+| Network | Attester Name | Attester ID | Attester Address |
+| --- | --- | --- | --- |
+| OP Sepolia | Flutter | 0x123 | 0x123 |
+
+### Schemas
+
+| Schema Name | Description | Schema Content | Schema ID | Schema UID |
+| --- | --- | --- | --- | --- |
+| OP Sepolia | Flutter | 0x123 | 0x123 | 0x123 |
+
+
 ## Development
 
 ```bash
 ### Configuration & Installation ###
 # 1. Clone this repo and enter cloned directory
-git clone [git@github.com:Uniswap/autocator.git](https://github.com/bean5oup/Flutter.git) && cd Flutter
+git clone https://github.com/bean5oup/Flutter.git && cd Flutter
+
 # 2. Copy example environment file (modify as needed)
 cp .env.example .env
 

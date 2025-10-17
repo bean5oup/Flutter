@@ -35,7 +35,7 @@ contract FlutterAttester is EIP712 {
         emit SchemaRegistered(schemaUID);
     }
 
-    function attestAddress(
+    function attest(
         bytes32 schemaUID,
         address recipient,
         bytes calldata sig,

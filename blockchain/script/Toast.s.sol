@@ -23,6 +23,8 @@ contract Toast is Script {
 
         bytes32 schemaUID = attester.registerSchema('bytes32 answer, uint256 timestamp, uint256 score', ISchemaResolver(address(0)), true);
 
+        console2.log('attester:', address(attester));
+
         vm.stopBroadcast();
     }
 }

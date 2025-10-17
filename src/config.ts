@@ -5,7 +5,8 @@ export const config = {
             'BASE_URL',
             'PRIVATE_KEY',
             'ATTESTER_ADDRESS',
-            'RPC_URL_OPTIMISM'
+            'RPC_URL_OPTIMISM',
+            'RPC_URL_OPTIMISM_SEPOLIA'
         ],
         properties: {
             PORT: {
@@ -29,6 +30,10 @@ export const config = {
             },
             ATTESTER_ADDRESS: {
                 type: 'string'
+            },
+            RPC_URL_OPTIMISM_SEPOLIA: {
+                type: 'string',
+                default: 'https://sepolia.optimism.io'
             },
             RPC_URL_OPTIMISM: {
                 type: 'string'
