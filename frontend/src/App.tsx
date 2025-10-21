@@ -22,8 +22,10 @@ const queryClient = new QueryClient({
 });
 
 function AppContent() {
-    const { isConnected } = useAccount();
+    const { address, isConnected } = useAccount();
     const [selectedMenu, setSelectedMenu] = useState<'history' | 'questionnaire' | null>(null);
+
+    console.log(address);
 
     return (
         <div className="h-screen flex flex-col">
@@ -72,9 +74,11 @@ function AppContent() {
                             <div>
                                 <h2>Choose Your Action</h2>
                                 <div className="flex justify-center flex-col">
-                                    <button onClick={() => setSelectedMenu('history')}>
-                                        📊 View History
-                                    </button>
+                                        <button onClick={() => setSelectedMenu(null)}>
+                                            <a href={`https://optimism-sepolia.easscan.org/address/${address}`}>
+                                                📊 View History
+                                            </a>
+                                        </button>
                                     <button onClick={() => setSelectedMenu('questionnaire')}>
                                         📝 Start Questionnaire
                                     </button>
