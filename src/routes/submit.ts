@@ -35,7 +35,7 @@ export async function setupSubmitRoutes(
                 if (!validationResult.isValid)
                     throw new Error(validationResult.error || 'Invalid submit');
 
-                const evaluateResult = await evaluate();
+                const evaluateResult = await evaluate(answers);
 
                 const attestResult = await attest(server, parseInt(chainId), normalizedAccount, answers, signature, timestamp, evaluateResult.score);
                 if(!attestResult.success)

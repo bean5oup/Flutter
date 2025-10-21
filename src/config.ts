@@ -37,6 +37,10 @@ export const config = {
             },
             RPC_URL_OPTIMISM: {
                 type: 'string'
+            },
+            OLLAMA_HOST: {
+                type: 'string',
+                default: 'http://localhost:11434' // Ollama local server
             }
         }
     }
